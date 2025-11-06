@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LYN'S ART GALLERY BLOG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMt23cez/3paNdF+e4x5l5d1z5a6b6c7b6c7b6"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body> 
+    
+    <!-- Enhanced Navigation Bar -->
+    <header id="home">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="images/logo1.jpg" alt="Lyn's Art Gallery Logo" class="logo-img">
+                    Lyn's Art Gallery
+                </a>
+                
+                <div class="navbar-nav">
+                    <div class="nav-links">
+                        <a href="#home" class="nav-link active">Home</a>
+                        <a href="#design" class="nav-link">Design</a>
+                        <a href="#blog" class="nav-link">Blog</a>
+                        <a href="#shop" class="nav-link">Shop</a>
+                        <a href="#team" class="nav-link">Team</a>
+                        <a href="#about" class="nav-link">About</a>
+                    </div>
+
+                    <div class="nav-actions">
+                        <!-- Shopping Cart Dropdown -->
+                        <div class="dropdown">
+                            <div class="nav-action-item">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Cart</span>
+                                <div class="cart-count">0</div>
+                            </div>
+                            <div class="dropdown-content cart-dropdown">
+                                <div class="dropdown-header">
+                                    <h3>Your Cart</h3>
+                                </div>
+                                <div class="cart-items">
+                                    <p style="text-align: center; color: #666; padding: 2rem;">Your cart is empty</p>
+                                </div>
+                                <div class="cart-total">
+                                    <span>Total:</span>
+                                    <span>$0.00</span>
+                                </div>
+                                <div class="cart-actions">
+                                    <button class="btn-secondary" onclick="closeCartDropdown()">Continue Shopping</button>
+                                    <button class="btn-primary" onclick="proceedToCheckout()">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                       <!-- Hours Dropdown -->
+                        <div class="nav-action-item dropdown">
+                            <i class="far fa-clock"></i>
+                            <span>Hours</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-header">
+                                    <h3>Business Hours</h3>
+                                </div>
+                                <ul class="hours-list">
+                                    <li>
+                                        <span>Mon - Fri</span>
+                                        <span>10:00 AM - 6:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Saturday</span>
+                                        <span>11:00 AM - 8:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Sunday</span>
+                                        <span>12:00 PM - 5:00 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner Section -->
+        <div class="banner" id="home">
+            <div class="container">
+                <div class="banner-content">
+                    <h1 class="banner-title">Welcome to Lyn's Art Gallery Blog</h1>
+                    <p class="banner-subtitle">!Where Creativity Meets Expression!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Design Section -->
+    <section class="design" id="design">
+        <div class="container">
+            <div class="title">
+                <h2>Recent Art Pieces & Design</h2>
+                <p>Explore the latest art pieces and design trends that inspire creativity and innovation.</p>
+            </div>
+            <div class="design-content">
+                <!-- Design items remain the same -->
+                <div class="design-item">
+                    <div class="design-img">
+                        <img src="images/6.jpg" alt="Modern Art Trends">
+                    </div>
+                    <div class="design-title">
+                        <h3>Modern Art Trends</h3>
+                        <p>Discover the latest trends in modern art and how they are shaping the future of creativity.</p>
+                    </div>
+                </div>
+                <div class="design-item">
+                    <div class="design-img">
+                        <img src="images/r.jpg" alt="Creative Process">
+                    </div>
+                    <div class="design-title">
+                        <h3>Creative Process</h3>
+                        <p>Take a behind-the-scenes look at how I create my artwork.</p>
+                    </div>
+                </div>
+                <div class="design-item">
+                    <div class="design-img">
+                        <img src="images/9.webp" alt="Featured Mediums">
+                    </div>
+                    <div class="design-title">
+                        <h3>Featured Mediums</h3>
+                        <p>My portfolio includes acrylics, watercolors, digital illustration, and mixed media.</p>
+                    </div>
+                </div>
+                <div class="design-item">
+                    <div class="design-img">
+                        <img src="images/u.jpg" alt="Inspiration">
+                    </div>
+                    <div class="design-title">
+                        <h3>Inspiration</h3>
+                        <p>My inspiration comes from everyday life, nature, and culture.</p>
+                    </div>
+                </div>
+                <div class="design-item">
+                    <div class="design-img">
+                        <img src="images/x.jpeg" alt="Gallery Highlights">
+                    </div>
+                    <div class="design-title">
+                        <h3>Gallery Highlights</h3>
+                        <p>Browse some of my favorite works that have been exhibited in local galleries.</p>
+                    </div>
+                </div>
+                <div class="design-item">
+                    <div class="design-img">
+                        <img src="images/collage.webp" alt="Mixed Media Collage">
+                    </div>
+                    <div class="design-title">
+                        <h3>Mixed Media Collage</h3>
+                        <p>This piece combines paper, paint, and digital elements to create a vibrant collage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- ===== BLOG SECTION ===== -->
+<section class="blog" id="blog">
+    <div class="container">
+        <div class="title">
+            <h2>Latest Blog Posts</h2>
+            <p>Stay updated with the latest insights, trends, and discussions in the art world.</p>
+        </div>
+        <div class="blog-content">
+            <!-- Blog Post 1 -->
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="images/blue.jpg" alt="The Evolution of Contemporary Art">
+                    <span>Art & Culture</span>
+                </div>
+                <div class="blog-text">
+                    <h3>The Evolution of Contemporary Art</h3>
+                    <p>Explore how contemporary art has evolved over the years and its impact on modern society.</p>
+                    <span class="blog-date">Posted on: June 25, 2025</span>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="images/a.jpg" alt="Understanding Abstract Art">
+                    <span>Art & Design</span>
+                </div>
+                <div class="blog-text">
+                    <h3>Understanding Abstract Art</h3>
+                    <p>Dive into the world of abstract art and discover its significance in the art community.</p>
+                    <span class="blog-date">Posted on: June 20, 2025</span>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="images/tech3.jpeg" alt="Art and Technology">
+                    <span>Art & Technology</span>
+                </div>
+                <div class="blog-text">
+                    <h3>The Intersection of Art and Technology</h3>
+                    <p>How technology is transforming the way we create and experience art in the digital age.</p>
+                    <span class="blog-date">Posted on: June 15, 2025</span>
+                </div>
+            </div>
+
+            <!-- Blog Post 4 -->
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="images/historical mov.webp" alt="Art Movements">
+                    <span>Art & History</span>
+                </div>
+                <div class="blog-text">
+                    <h3>The Influence of Art Movements</h3>
+                    <p>Explore the major art movements that have shaped the history of art and their lasting impact.</p>
+                    <span class="blog-date">Posted on: June 10, 2025</span>
+                </div>
+            </div>
+
+            <!-- Blog Post 5 -->
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="images/5.jpg" alt="Floral Art">
+                    <span>Nature & Art</span>
+                </div>
+                <div class="blog-text">
+                    <h3>The Beauty of Floral Art</h3>
+                    <p>Discover how flowers inspire artists and bring color to creative works across all mediums.</p>
+                    <span class="blog-date">Posted on: July 2, 2025</span>
+                </div>
+            </div>
+
+            <!-- Blog Post 6 -->
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="images/8.webp" alt="Portrait Art">
+                    <span>Portraits</span>
+                </div>
+                <div class="blog-text">
+                    <h3>Expressing Emotion Through Portraits</h3>
+                    <p>Explore the techniques artists use to convey deep emotion and personality in portrait art.</p>
+                    <span class="blog-date">Posted on: July 5, 2025</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SHOP SECTION ===== -->
+<section class="shop" id="shop">
+    <div class="container">
+        <div class="title">
+            <h2>Art Shop</h2>
+            <p>Discover unique artworks for your collection</p>
+        </div>
+
+        <div class="shop-content">
+            <!-- Product 1 -->
+            <div class="shop-item" data-category="paintings">
+                <div class="shop-img">
+                    <img src="images/blue.jpg" alt="Abstract Blue Painting">
+                    <div class="art-badge">Bestseller</div>
+                </div>
+                <div class="shop-info">
+                    <h3>Abstract Blue Harmony</h3>
+                    <p>Contemporary abstract painting with deep blue tones and textured finish</p>
+                    <div class="shop-meta">
+                        <div class="price">$299.99</div>
+                        <div class="size">24" x 36"</div>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="shop-item" data-category="paintings">
+                <div class="shop-img">
+                    <img src="images/a.jpg" alt="Modern Art Piece">
+                    <div class="art-badge">New</div>
+                </div>
+                <div class="shop-info">
+                    <h3>Modern Expression</h3>
+                    <p>Vibrant modern art piece showcasing bold colors and dynamic composition</p>
+                    <div class="shop-meta">
+                        <div class="price">$459.99</div>
+                        <div class="size">30" x 40"</div>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="shop-item" data-category="prints">
+                <div class="shop-img">
+                    <img src="images/tech3.jpeg" alt="Digital Art Print">
+                    <div class="art-badge">Limited</div>
+                </div>
+                <div class="shop-info">
+                    <h3>Digital Fusion Print</h3>
+                    <p>High-quality digital art print combining technology and traditional art forms</p>
+                    <div class="shop-meta">
+                        <div class="price">$149.99</div>
+                        <div class="size">18" x 24"</div>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="shop-item" data-category="photography">
+                <div class="shop-img">
+                    <img src="images/mov6.jpg" alt="Art Movement Photography">
+                    <div class="art-badge">Exclusive</div>
+                </div>
+                <div class="shop-info">
+                    <h3>Urban Movement</h3>
+                    <p>Limited edition photography capturing the essence of modern urban art movements</p>
+                    <div class="shop-meta">
+                        <div class="price">$199.99</div>
+                        <div class="size">16" x 20"</div>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="shop-item" data-category="paintings">
+                <div class="shop-img">
+                    <img src="images/5.jpg" alt="Floral Art Painting">
+                    <div class="art-badge">Popular</div>
+                </div>
+                <div class="shop-info">
+                    <h3>Floral Symphony</h3>
+                    <p>Beautiful floral art painting with vibrant colors and delicate brushwork</p>
+                    <div class="shop-meta">
+                        <div class="price">$349.99</div>
+                        <div class="size">20" x 30"</div>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="shop-item" data-category="sculptures">
+                <div class="shop-img">
+                    <img src="images/8.webp" alt="Portrait Sculpture">
+                    <div class="art-badge">Unique</div>
+                </div>
+                <div class="shop-info">
+                    <h3>Emotional Portrait</h3>
+                    <p>Handcrafted sculpture capturing deep emotion and human expression</p>
+                    <div class="shop-meta">
+                        <div class="price">$599.99</div>
+                        <div class="size">12" Tall</div>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="title">
+                <h2>Meet Our Team</h2>
+                <p>These are the creative minds behind Lyn's Art Gallery Blog.</p>
+            </div>
+            <div class="team-content">
+                <div class="team-member">
+                    <img src="images/ash.jpeg" alt="Asha">
+                    <h3>Asha</h3>
+                    <p><strong>Manager & Artist</strong></p>
+                    <p>Asha oversees gallery operations while creating her own mixed media and digital illustrations that feature in our exhibitions.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/IMG_4617.JPG" alt="Ian K">
+                    <h3>Ian K</h3>
+                    <p><strong>Gallery Curator</strong></p>
+                    <p>Ian K curates exhibitions and manages gallery events with a keen eye for detail.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/IMG_E0022.JPG" alt="Sophia Lee">
+                    <h3>Sophia Lee</h3>
+                    <p><strong>Social Media Manager</strong></p>
+                    <p>Sophia manages the gallery's online presence and builds our vibrant art community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ===== ABOUT SECTION ===== -->
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="title">
+            <h2>About The Artist</h2>
+            <p>Get to know the creative mind behind the artwork</p>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/IMG_0025.JPG" alt="Lyn Sue">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/lyns_art_gallery_blog?igsh=bHB4cjg4MW53NnZn&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@lyn.art.gallery.blog"><i class="fab fa-tiktok"></i></a>
+                    <a href="mailto:lynartgalleryblog160@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="about-text">
+                <h3>Lyn Sue</h3>
+                <p class="tagline">Art is my passion</p>
+                <p>Lyn Sue is an artist and designer with a passion for creating unique pieces that inspire and evoke emotions. Through my blog, I share my experiences, insights, and the stories behind my art.</p>
+                
+                <div class="about-details">
+                    <div class="detail-item">
+                        <h4>🎨 Background</h4>
+                        <p>Started exploring art at a young age, experimenting with painting, illustration, and digital design.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>🖌️ Mediums</h4>
+                        <p>Acrylics, watercolors, digital illustration, mixed media, and sculpture.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>💫 Inspiration</h4>
+                        <p>Everyday life, nature, culture, and the emotions of people around me.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>🏆 Achievements</h4>
+                        <p>Exhibited in local galleries, collaborated with artists, and taught art workshops.</p>
+                    </div>
+                </div>
+                
+                <div class="mission-statement">
+                    <h4>My Mission</h4>
+                    <p>To inspire creativity, encourage self-expression, and connect with fellow art lovers through meaningful artwork and shared experiences.</p>
+                </div>
+                
+                <div class="contact-info">
+                    <h4>📧 Let's Connect</h4>
+                    <p>Have questions or want to collaborate? Reach out!</p>
+                    <a href="mailto:lynartgalleryblog160@gmail.com" class="contact-btn">
+                        <i class="fas fa-envelope"></i>
+                        lynartgalleryblog160@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </div>
+</section>
+
+<!-- Register Modal -->
+
+<div id="registerModal" class="login-modal" style="display:none;">
+    <div class="login-modal-content">
+        <span class="close-btn" onclick="document.getElementById('registerModal').style.display='none'">&times;</span>
+        <h2>Register</h2>
+        <form>
+            <label for="reg-username">Username:</label>
+            <input type="text" id="reg-username" name="reg-username" required>
+            <label for="reg-email">Email:</label>
+            <input type="email" id="reg-email" name="reg-email" required>
+            <label for="reg-password">Password:</label>
+            <input type="password" id="reg-password" name="reg-password" required>
+            <button type="submit" class="login-btn">Register</button>
+        </form>
+        <p style="margin-top:1rem;">
+            Already have an account?
+            <a href="#" onclick="document.getElementById('registerModal').style.display='none'; document.getElementById('loginModal').style.display='block'; return false;" style="color:#c239ef;font-weight:bold;">Login here</a>
+        </p>
+    </div>
+</div>
+
+ <!-- ===== LOGIN MODAL ===== -->
+  
+<div class="login-modal" id="loginModal">
+    <div class="login-modal-content">
+        <button class="close-btn">&times;</button>
+        <h2>Welcome Back</h2>
+        <p>Please login to your account</p>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="loginEmail">Email Address</label>
+                <input type="email" id="loginEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" class="switch-to-signup">Sign up here</a></p>
+    </div>
+</div>
+
+<!-- ===== SIGNUP MODAL ===== -->
+<div class="login-modal" id="signupModal">
+    <div class="login-modal-content">
+        <button class="close-btn">&times;</button>
+        <h2>Create Account</h2>
+        <p>Join our art community today</p>
+        
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="signupName">Full Name</label>
+                <input type="text" id="signupName" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="signupEmail">Email Address</label>
+                <input type="email" id="signupEmail" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" placeholder="Create a password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+            </div>
+            
+            <button type="submit" class="login-btn">Sign Up</button>
+        </form>
+        
+        <p>Already have an account? <a href="#" class="switch-to-login">Login here</a></p>
+    </div>
+</div>
+
+<!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content large">
+            <span class="close-btn" onclick="closeCheckout()">&times;</span>
+            <h2>Checkout</h2>
+            <div class="checkout-content">
+                <div class="checkout-form">
+                    <h3>Shipping Information</h3>
+                    <form id="checkout-form">
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="checkout-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">ZIP Code</label>
+                                <input type="text" id="zip" required>
+                            </div>
+                        </div>
+                        
+                        <h3>Delivery Method</h3>
+                        <div class="delivery-methods">
+                            <label class="delivery-option">
+                                <input type="radio" name="delivery" value="standard" checked>
+                                <span class="delivery-info">
+                                    <strong>Standard Shipping</strong>
+                                    <span>5-7 business days • $8.99</span>
+                                </span>
+                            </label>
+                            <label class="delivery-option">
+                                <input type="radio" name="delivery" value="express">
+                                <span class="delivery-info">
+                                    <strong>Express Shipping</strong>
+                                    <span>2-3 business days • $15.99</span>
+                                </span>
+                            </label>
+                            <label class="delivery-option">
+                                <input type="radio" name="delivery" value="pickup">
+                                <span class="delivery-info">
+                                    <strong>Gallery Pickup</strong>
+                                    <span>Free • Ready in 24 hours</span>
+                                </span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Place Order</button>
+                    </form>
+                </div>
+                
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div id="checkout-items"></div>
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Subtotal:</span>
+                            <span id="summary-subtotal">$0.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Shipping:</span>
+                            <span id="summary-shipping">$0.00</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Total:</span>
+                            <span id="summary-total">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeConfirmation()">&times;</span>
+            <div class="confirmation-content">
+                <i class="fas fa-check-circle"></i>
+                <h2>Order Confirmed!</h2>
+                <p>Thank you for your purchase! Your order has been received.</p>
+                <div class="order-details">
+                    <p><strong>Order Number:</strong> <span id="confirmation-number">ART2025-001</span></p>
+                    <p><strong>Estimated Delivery:</strong> <span id="confirmation-delivery">5-7 business days</span></p>
+                </div>
+                <p>You will receive a confirmation email shortly with tracking information.</p>
+                <button class="btn-primary" onclick="closeConfirmation()">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Footer -->
+    <footer>
+        <span>Lyn's Art Gallery Blog &copy; 2025. All rights reserved.</span>
+    </footer>
+
+     <script src="cart.js"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("user_7oGJYh1rXn6h3Y5k");
+            })();
+        </script>
+        
+</body>
+</html>
